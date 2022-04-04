@@ -7,6 +7,8 @@ TEST_FOLDER=/home/lnls-bpm/repos/test
 sudo systemctl stop halcs-be-ioc@${BPM_IDX}.target
 sudo systemctl mask halcs-be-ioc@${BPM_IDX}.target
 
+read -p "Press ENTER to run bpm-epics-ioc @${BPM_IDX}"
+
 source ioc_env.sh
 cd ${TEST_FOLDER}/bpm-epics-ioc/iocBoot/iocBPM
 ./runBPM.sh ipc:///tmp/malamute ${BPM_IDX}
