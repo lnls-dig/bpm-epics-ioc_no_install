@@ -1,7 +1,5 @@
 #!/bin/bash
 
-BPM_IDX=$1
-
 TEST_TAG=test_interlock
 TEST_FOLDER=/home/lnls-bpm/repos/test
 
