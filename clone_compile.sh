@@ -11,7 +11,7 @@ if [ ! $# -eq 2 ]
     exit
 fi
 
-mkdir -p ${TEST_FOLDER}
+mkdir -p ${TEST_FOLDER} /tmp/log/halcs
 cp patches/no-installation-halcs.patch patches/no-installation-bpm-epics-ioc.patch ${TEST_FOLDER}
 
 cd ${TEST_FOLDER}
