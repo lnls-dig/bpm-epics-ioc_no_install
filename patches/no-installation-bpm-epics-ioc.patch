@@ -130,7 +130,7 @@ index 0000000..53bd458
 +export PROCSERV_FE_PORT_PREFIX=300
 +# EPICS_PV_AREA_PREFIX="SI-XXYY:"
 +# EPICS_PV_DEVICE_PREFIX="DI-BPM:"
-+export EPICS_PV_CRATE_PREFIX="CRATE_17"
++#export EPICS_PV_CRATE_PREFIX="CRATE_17"
 +export EPICS_CA_MAX_ARRAY_BYTES=50000000
 +export PATH=/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/opt/epics/base/bin/linux-x86_64
 +
