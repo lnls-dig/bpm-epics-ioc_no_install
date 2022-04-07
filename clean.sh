@@ -1,7 +1,6 @@
 #!/bin/bash
 
 BPM_IDX=$1
+TEST_FOLDER=/tmp/repos/test
 
-TEST_FOLDER=/home/lnls-bpm/repos/test
-
-sudo rm -rf ${TEST_FOLDER}
+rm -rf ${TEST_FOLDER}

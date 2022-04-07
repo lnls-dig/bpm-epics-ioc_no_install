@@ -1,7 +1,7 @@
 #!/bin/bash
 
 TEST_TAG=test_interlock
-TEST_FOLDER=/home/lnls-bpm/repos/test
+TEST_FOLDER=/tmp/repos/test
 
 mkdir -p ${TEST_FOLDER}
 cp patches/no-installation-halcs.patch patches/no-installation-bpm-epics-ioc.patch ${TEST_FOLDER}
