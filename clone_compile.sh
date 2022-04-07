@@ -5,6 +5,12 @@ BPM_EPICS_IOC_BRANCH=$2
 
 TEST_FOLDER=/tmp/repos/test
 
+if [ ! $# -eq 2 ]
+  then
+    echo "Wrong usage! $0 <HALCS_BRANCH> <BPM_EPICS_IOC_BRANCH>"
+    exit
+fi
+
 mkdir -p ${TEST_FOLDER}
 cp patches/no-installation-halcs.patch patches/no-installation-bpm-epics-ioc.patch ${TEST_FOLDER}
 

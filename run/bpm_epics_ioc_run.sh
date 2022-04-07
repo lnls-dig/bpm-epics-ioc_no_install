@@ -4,6 +4,12 @@ BPM_IDX=$1
 
 TEST_FOLDER=/tmp/repos/test
 
+if [ ! $# -eq 1 ]
+  then
+    echo "Wrong usage! $0 <BPM_IDX>"
+    exit
+fi
+
 sudo systemctl stop halcs-be-ioc@${BPM_IDX}
 sudo systemctl mask halcs-be-ioc@${BPM_IDX}
 
