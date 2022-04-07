@@ -12,19 +12,14 @@ Scripts for testing [lnls-dig/bpm-epics-ioc](https://github.com/lnls-dig/bpm-epi
 `cd /tmp/bpm-epics-ioc_no_install`<br>
 `./clone_compile.sh <HALCS_BRANCH> <BPM_EPICS_IOC_BRANCH>`
 
-### How to run _halcs-be_ and _halcs-be-ioc_ instances
+### How to run BPM IOC and HALCS BPM instances
+------
+In `run` folder,
 
-The following scripts do:
-1. Stop and mask the correspoding systemd service;
-2. Run the instance as a typical process (outside systemd tree);
-3. After exiting the instance, unmask and restart the correspoding systemd service.
+##### BPM IOC instance (perfoms _halcs-be-ioc_'s role):
 
-##### _halcs-be-ioc_ (BPM IOC) instance
+`./bpm_epics_ioc_run.sh <CRATE_PREFIX> <BPM_IDX>` (exit by typing `exit` on IOC's shell)
 
-`./bpm_epics_ioc_run.sh <CRATE_PREFIX> <BPM_IDX>`
-Exit by typing `exit` on IOC's shell.
+##### HALCS BPM instance (performs _halcs-be_'s role):
 
-##### _halcs-be_ (HALCS BPM) instance
-
-`./halcs_run.sh <BPM_IDX>`
-Exit using `Ctrl + c` keybinding.
+`./halcs_run.sh <BPM_IDX>` (exit using `Ctrl + c` keybinding)
